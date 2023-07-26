@@ -5,13 +5,237 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
   </head>
   <body>
     <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
-
+    <!-- banner -->
+    <header
+      class="header d-flex align-items-lg-center justify-content-lg-center"
+    >
+      <div class="text-center text-white pt-6 px-3">
+        <p>你是不是也有夢想</p>
+        <h1 class="fw-bold">當個小懶蟲?</h1>
+        <p>
+          想有人幫你丟垃圾、澆花、買飯、洗衣服，最好還可以幫你寫功課、工作！
+          <br />
+          不想做討厭的事也不想被罵，只想把時間花在更喜歡的事情上，
+          <br />
+          來！就讓我們幫你實現願望^__^！
+        </p>
+      </div>
+    </header>
+    <!-- 第二區 -->
+    <section class="container py-6">
+      <div class="row row-cols-1 row-cols-lg-2 flex-lg-row-reverse">
+        <div class="col d-flex flex-column justify-content-center">
+          <h2 class="fw-bold text-dark-black mb-1">讓我們幫你節省寶貴的時間</h2>
+          <p class="text-secondary lh-lg">
+            我們有專業的清潔大師、花草大師，
+            <br />
+            也有學霸、來自各界的專業人才，
+            <br />
+            幫您處理您沒時間做的小事、大事，
+            <br />
+            讓你安心把人生花在你覺得更有意義的事情上！
+            <br />
+            （只要您有錢即可
+          </p>
+        </div>
+        <div class="col">
+          <img src="/assets/images/info.jpg" alt="info" />
+        </div>
+      </div>
+    </section>
+    <!-- 第三區 -->
+    <section class="problems py-6">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-5">你有這些煩惱嗎？</h2>
+        <div class="row row-cols-1 row-cols-lg-4">
+          <div class="col">
+            <div class="card border-0 shadow-sm py-4 h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-trash-fill fs-cs-48 text-info"></i>
+                <h3 class="fw-bold fs-5">追不到垃圾車</h3>
+                <p class="text-secondary lh-lg">
+                  每天追垃圾很煩嗎？倒個垃圾
+                  <br />
+                  還要走出門好累對吧？
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-sm py-4 h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-flower1 fs-cs-48 text-info"></i>
+                <h3 class="fw-bold fs-5">不會照顧盆栽</h3>
+                <p class="text-secondary lh-lg">
+                  覺得很可愛所以買一堆，結果
+                  <br />
+                  根本不會照顧，快死光了？
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-sm py-4 h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-journal-x fs-cs-48 text-info"></i>
+                <h3 class="fw-bold fs-5">作業不會寫</h3>
+                <p class="text-secondary lh-lg">
+                  什麼微積分、程式設計、或是
+                  <br />
+                  設計稿，不會做也不想做？
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-sm py-4 h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-emoji-frown fs-cs-48 text-info"></i>
+                <h3 class="fw-bold fs-5">很不開心</h3>
+                <p class="text-secondary lh-lg">
+                  每天都把時間花在不想做的事
+                  <br />
+                  情就飽了，怎麼快樂？
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 第四區 -->
+    <section class="container py-6">
+      <h2 class="text-center fw-bold mb-5">方案費用</h2>
+      <div class="row row-cols-1 row-cols-lg-3">
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm">
+            <div
+              class="card-header text-center text-secondary border-bottom-0 fw-bold fs-4"
+            >
+              小小搭懶蟲
+            </div>
+            <div class="card-body text-center plan flex-grow-0">
+              <img src="/assets/images/plan01.jpg" alt="plan01" />
+              <p class="fs-5 text-info mt-3">
+                NT
+                <strong class="fw-bold fs-1">298</strong>
+                /月
+              </p>
+            </div>
+            <ul class="list-group list-group-flush border-top flex-grow-1">
+              <li class="list-group-item text-secondary ps-6">
+                <i
+                  class="bi bi-check-lg text-info position-absolute start-0 ps-3"
+                ></i
+                >每週三天定時收垃圾
+              </li>
+              <li class="list-group-item text-secondary ps-6">
+                <i
+                  class="bi bi-check-lg text-info position-absolute start-0 ps-3"
+                ></i
+                >當你的小鬧鐘，提醒你要完成的重要事項
+              </li>
+              <li class="list-group-item text-secondary ps-6 border-bottom">
+                <i
+                  class="bi bi-check-lg text-info position-absolute start-0 ps-3"
+                ></i
+                >幫你查資料
+              </li>
+            </ul>
+            <div class="card-footer bg-white p-3">
+              <button class="btn btn-info w-100">選擇方案</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm">
+            <div
+              class="card-header bg-info text-center text-white border-bottom-0 fw-bold fs-4"
+            >
+              睡一整天囉
+            </div>
+            <div class="card-body text-center plan">
+              <img src="/assets/images/plan02.jpg" alt="plan02" />
+              <p class="fs-5 text-info mt-3">
+                NT
+                <strong class="fw-bold fs-1">666</strong>
+                /月
+              </p>
+            </div>
+            <ul class="list-group list-group-flush border-top border-bottom">
+              <li class="list-group-item text-secondary ps-6">
+                <i
+                  class="bi bi-check-lg text-info position-absolute start-0 ps-3"
+                ></i
+                >小懶蟲方案所有服務
+              </li>
+              <li class="list-group-item text-secondary ps-6">
+                <i
+                  class="bi bi-check-lg text-info position-absolute start-0 ps-3"
+                ></i
+                >每週一天幫你整理房間
+              </li>
+              <li class="list-group-item text-secondary ps-6">
+                <i
+                  class="bi bi-check-lg text-info position-absolute start-0 ps-3"
+                ></i
+                >幫你安排三餐（會先確認你的喜好）
+              </li>
+              <li class="list-group-item text-secondary ps-6">
+                <i
+                  class="bi bi-check-lg text-info position-absolute start-0 ps-3"
+                ></i
+                >每週一天幫你採買日用品（限台灣）
+              </li>
+            </ul>
+            <div class="card-footer bg-white p-3">
+              <button class="btn btn-info w-100">選擇方案</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm">
+            <div
+              class="card-header text-center text-secondary border-bottom-0 fw-bold fs-4"
+            >
+              自由自在的人生
+            </div>
+            <div class="card-body text-center plan flex-grow-0">
+              <img src="/assets/images/plan03.jpg" alt="plan03" />
+              <p class="fs-5 text-info mt-5 fw-bold">客製化詢價</p>
+            </div>
+            <ul
+              class="list-group list-group-flush border-top border-bottom flex-grow-1"
+            >
+              <li class="list-group-item border-bottom text-secondary ps-6">
+                <i
+                  class="bi bi-check-lg text-info position-absolute start-0 ps-3"
+                ></i
+                >希望有個小秘書、小幫手，完成您交辦的客製化任務，歡迎與我們聯繫！
+              </li>
+            </ul>
+            <div class="card-footer bg-white p-3">
+              <button class="btn btn-info w-100">選擇方案</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
