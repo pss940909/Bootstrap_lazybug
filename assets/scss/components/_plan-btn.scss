@@ -1,0 +1,7 @@
+.plan-btn {
+  &.active {
+    background-color: $info;
+    color: $white;
+    font-weight: bold;
+  }
+}

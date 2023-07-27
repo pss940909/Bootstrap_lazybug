@@ -27,7 +27,124 @@
         <div class="col-12 col-lg-7">
           <div class="card shadow-lg border-0 py-lg-6 px-lg-5">
             <div class="card-body">
-              <h2 class="fs-5 fw-bold deco-line">選擇方案</h2>
+              <h2 class="fs-5 fw-bold deco-line mb-3 ps-3">選擇方案</h2>
+              <div class="row row-cols-1 row-cols-lg-3 g-2">
+                <div class="col">
+                  <button
+                    class="btn btn-outline-info w-100 text-dark-black fw-bold plan-btn"
+                  >
+                    小小搭懶蟲
+                    <br class="d-none d-lg-block" />
+                    NT 298/月
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    class="btn btn-outline-info w-100 text-dark-black fw-bold plan-btn"
+                  >
+                    睡一整天囉
+                    <br class="d-none d-lg-block" />
+                    NT 666/月
+                  </button>
+                </div>
+                <div class="col">
+                  <button class="btn btn-outline-info w-100 active plan-btn">
+                    客製化方案
+                    <br class="d-none d-lg-block" />
+                    客服詢價
+                  </button>
+                </div>
+              </div>
+              <h2 class="fs-5 fw-bold deco-line mb-3 ps-3 mt-5 mb-3">
+                填寫資料
+              </h2>
+              <form class="row g-2">
+                <div class="col-lg-6">
+                  <label for="firstname" class="form-label">名字</label>
+                  <input type="text" class="form-control" id="firstname" />
+                </div>
+                <div class="col-lg-6">
+                  <label for="lastname" class="form-label">姓氏</label>
+                  <input type="text" class="form-control" id="lastname" />
+                </div>
+                <div class="col-12 mt-3">
+                  <label for="phonenumber" class="form-label">手機號碼</label>
+                  <input type="number" class="form-control" id="phonenumber" />
+                </div>
+                <div class="col-12 mt-3">
+                  <label for="email" class="form-label">電子郵件</label>
+                  <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="col-12 mt-3">
+                  <label for="address" class="form-label">住址</label>
+                  <input type="text" class="form-control" id="address" />
+                </div>
+                <div class="col-12 mt-3">
+                  <label for="time" class="form-label">方便聯繫時間</label>
+                  <select id="time" class="form-select">
+                    <option selected>13:00-17:00</option>
+                    <option>18:00-22:00</option>
+                  </select>
+                </div>
+                <div class="col-12 mt-3">
+                  <label for="address" class="form-label">住址</label>
+                  <input type="text" class="form-control" id="address" />
+                </div>
+                <div class="col-12 mt-3">
+                  <p class="mb-2">加購服務</p>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="clean-100"
+                      value="clean-100"
+                      name="extra-service"
+                    />
+                    <label class="form-check-label" for="clean-100"
+                      >每週一清掃家裡+100</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="massage-50"
+                      value="massage-50"
+                      name="extra-service"
+                    />
+                    <label class="form-check-label" for="massage-50"
+                      >按摩+50</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="talk-150"
+                      value="talk-150"
+                      name="extra-service"
+                    />
+                    <label class="form-check-label" for="talk-150"
+                      >聽你說話+150</label
+                    >
+                  </div>
+                </div>
+                <div class="col-12 mb-5 mt-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >備註說明</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="col-12 mt-0">
+                  <button type="submit" class="btn btn-info w-100">
+                    選擇方案
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
