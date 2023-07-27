@@ -1,0 +1,12 @@
+.deco-line {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    top: 0;
+    bottom: 0;
+    left: -16px;
+    background-color: $info;
+  }
+}
